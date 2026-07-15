@@ -225,51 +225,6 @@ String(currentPage + 1).padStart(2,"0");
 
 
 
-/* =========================
-   페이지 이동
-========================= */
-
-
-document.getElementById("next")
-.onclick = function(){
-
-
-    if(currentPage < pages.length - 1){
-
-
-        currentPage++;
-
-
-        loadPage();
-
-
-    }
-
-
-};
-
-
-
-
-
-document.getElementById("prev")
-.onclick = function(){
-
-
-    if(currentPage > 0){
-
-
-        currentPage--;
-
-
-        loadPage();
-
-
-    }
-
-
-};
-
 
 
 
@@ -435,6 +390,36 @@ window.onload=function(){
 
 
     createSnow();
+
+
+    document.getElementById("next")
+    .onclick=function(){
+
+
+        if(currentPage < pages.length - 1){
+
+            currentPage++;
+
+            loadPage();
+
+        }
+
+    };
+
+
+    document.getElementById("prev")
+    .onclick=function(){
+
+
+        if(currentPage > 0){
+
+            currentPage--;
+
+            loadPage();
+
+        }
+
+    };
 
 
     setTimeout(()=>{
