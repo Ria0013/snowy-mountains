@@ -182,6 +182,8 @@ let typingTimer;
 
 function loadPage(){
 
+    typingID++;
+
     clearTimeout(typingTimer);
 
 
