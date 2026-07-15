@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SNOWFIELD ARCHIVE</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- 로딩 화면 -->
+<div id="loading">
+
+    <div class="loadingBox">
+
+        <div class="systemTitle">
+            SNOWFIELD SYSTEM
+        </div>
+
+        <div class="loadingText">
+            LOADING MEMORY...
+        </div>
+
+        <div class="loadingBar">
+            <div id="bar"></div>
+        </div>
+
+        <div class="access">
+            ACCESS STORY
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- 눈 파티클 -->
+<div id="snow"></div>
+
+
+
+<!-- 메인 영역 -->
+<main id="main">
+
+
+    <!-- 시스템 상태창 -->
+
+    <section class="status">
+
+        <div>
+            FILE : STORY_001
+        </div>
+
+        <div>
+            STATUS : READING
+        </div>
+
+        <div>
+            LOCATION : SNOWFIELD
+        </div>
+
+    </section>
+
+
+
+
+    <!-- 타이틀 이미지 -->
+
+    <img 
+    src="설산타이틀.png" 
+    id="titleImage"
+    alt="설산 타이틀">
+
+
+
+
+
+    <!-- 글 읽기 박스 -->
+
+    <section id="storyBox">
+
+
+        <div id="chapter">
+            CHAPTER 01
+        </div>
+
+
+        <div id="content">
+
+            <!--
+            본문 출력 위치
+
+            script.js의 pages 배열에서
+            자동으로 들어옵니다.
+
+            -->
+
+        </div>
+
+
+
+        <!-- 페이지 정보 -->
+
+        <div id="pageInfo">
+
+            PAGE 
+            <span id="pageNumber">
+                01
+            </span>
+            /
+            <span id="totalPage">
+                15
+            </span>
+
+        </div>
+
+
+
+        <!-- 진행률 -->
+
+        <div id="progress">
+
+            READING STATUS
+
+            <div class="progressBar">
+
+                <div id="progressFill"></div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- 조작 영역 -->
+
+    <section id="control">
+
+
+        <button id="prev">
+            ◀ PREV
+        </button>
+
+
+        <button id="menu">
+            MENU
+        </button>
+
+
+        <button id="next">
+            NEXT ▶
+        </button>
+
+
+    </section>
+
+
+
+    <!-- 글자 크기 -->
+
+    <section id="fontControl">
+
+        <button id="smallFont">
+            A-
+        </button>
+
+
+        <button id="bigFont">
+            A+
+        </button>
+
+
+    </section>
+
+
+
+</main>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
