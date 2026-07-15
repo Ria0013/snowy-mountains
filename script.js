@@ -184,9 +184,6 @@ function loadPage(){
     const content = document.getElementById("content");
 
 
-    content.innerHTML = "";
-
-
     content.innerHTML = pages[currentPage];
    
 
