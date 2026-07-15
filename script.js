@@ -187,15 +187,8 @@ function loadPage(){
     content.innerHTML = "";
 
 
-    typeWriter(
-        pages[currentPage],
-        content
-    );
-
-
-    document.getElementById("pageNumber").innerText =
-    String(currentPage + 1).padStart(2,"0");
-
+    content.innerHTML = pages[currentPage];
+   
 
     document.getElementById("totalPage").innerText =
     pages.length;
