@@ -171,6 +171,8 @@ let fontSize = 17;
 
 let typingTimer;
 
+let typingID = 0;
+
 
 
 
@@ -251,8 +253,17 @@ function typeWriter(text, element){
 
     const speed = 25;
 
+    const thisID = typingID;
+
 
     function typing(){
+
+
+        if(thisID !== typingID){
+
+            return;
+
+        }
 
 
         if(i < text.length){
@@ -279,7 +290,6 @@ function typeWriter(text, element){
     typing();
 
 }
-
 
 
 
