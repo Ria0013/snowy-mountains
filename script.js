@@ -185,6 +185,9 @@ function loadPage(){
 
 
     content.innerHTML = pages[currentPage];
+
+   document.getElementById("pageNumber").innerText =
+String(currentPage + 1).padStart(2,"0");
    
 
     document.getElementById("totalPage").innerText =
