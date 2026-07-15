@@ -169,6 +169,8 @@ Number(localStorage.getItem("snowPage")) || 0;
 
 let fontSize = 17;
 
+let typingTimer;
+
 
 
 
@@ -179,6 +181,8 @@ let fontSize = 17;
 
 
 function loadPage(){
+
+    clearTimeout(typingTimer);
 
 
     const content = document.getElementById("content");
@@ -239,12 +243,11 @@ function loadPage(){
 
 function typeWriter(text, element){
 
+    clearTimeout(typingTimer);
 
     let i = 0;
 
-
     const speed = 25;
-
 
 
     function typing(){
@@ -259,7 +262,7 @@ function typeWriter(text, element){
             i++;
 
 
-            setTimeout(
+            typingTimer = setTimeout(
                 typing,
                 speed
             );
@@ -272,7 +275,6 @@ function typeWriter(text, element){
 
 
     typing();
-
 
 }
 
