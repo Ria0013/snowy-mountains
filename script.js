@@ -226,56 +226,6 @@ function loadPage(){
 
 
 /* =========================
-   타자 효과
-========================= */
-
-
-function typeWriter(text, element){
-
-
-    let i = 0;
-
-
-    const speed = 25;
-
-
-
-    function typing(){
-
-
-        if(i < text.length){
-
-
-            element.innerHTML += text.charAt(i);
-
-
-            i++;
-
-
-            setTimeout(
-                typing,
-                speed
-            );
-
-
-        }
-
-
-    }
-
-
-    typing();
-
-
-}
-
-
-
-
-
-
-
-/* =========================
    페이지 이동
 ========================= */
 
